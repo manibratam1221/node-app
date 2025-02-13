@@ -28,7 +28,7 @@ jobs:
     - name: Repository Dispatch
       uses: peter-evans/repository-dispatch@v1
       with:
-        token: ${{ secrets.PAT }}
+        #token: ${{ secrets.PAT }}
         repository: ${{ github.actor }}/argocd-node-app-config
         event-type: new-image
         client-payload: '{"image": "manibratam123/${{ env.IMAGE_NAME }}:${{ github.run_number }}"}'
