@@ -1,7 +1,5 @@
-#!/bin/bash
-# Use Node.js base image
-FROM --platform=linux/amd64 node:11.15
-
+# Use a Node.js base image (LTS version, native to ARM if available)
+FROM node:18
 
 # Set the working directory
 WORKDIR /usr/src/app
