@@ -1,3 +1,4 @@
+#!/bin/sh
 # Use Node.js base image
 FROM --platform=linux/amd64 node:11.15
 
