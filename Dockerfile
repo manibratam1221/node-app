@@ -2,6 +2,9 @@
 # Use Node.js base image
 FROM --platform=linux/amd64 node:11.15
 
+#Update Permission
+chmod +x /usr/local/bin/docker-entrypoint.sh
+
 # Set the working directory
 WORKDIR /usr/src/app
 
